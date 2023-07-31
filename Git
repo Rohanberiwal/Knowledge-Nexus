@@ -1,0 +1,64 @@
+Notes git 
+Version control system - (git , SVN , ….)
+File saving place(GitHub , gitlab ,bitbucket) // considered as dumb version of google drive .
+What is version control system :
+
+Example project calculator : 
+Folder -> calculator :
+File 1 : source code (folder )
+File 2 :  readme (folder)
+File 3  : test cases (file)
+// Version control system keep a track of the ongoing project + controlling of placement of the code  .
+Version control system always work with the GitHub , now days ci/cd pipelining is used .
+Version control system [vcs] (time vs version diagram) :
+
+Difference between clone and fork : 
+Clone :  // pass by address sort of thing 
+The changes of the main is seen in the copy , similar to pull .
+Fork :  use to make a copy of the project and make a different copy . The fork copy and the main copy are not associated with each other . // similar to pass by value 
+
+
+Workflow : 
+
+Push means pushing the changes made into the project .
+Case -1 
+Main repo has no changes 
+// there is no issue with the push . There is no clash .
+Case -2 
+Main repo has changes made.
+// a check has to be maintained , with conflict resolve has to be done .
+ AFTER CONFLICT RESOLVING 
+// there  are changes observed 
+// conflict resolve is the most important thing during / before pushing . 
+// resolve the conflict then only make the changes ..
+// the chain has to be conflict free 
+// order of the changer does matter .
+// pull —> push .
+Gitpull -> pull the file .
+Gitpush -> push the file to make the changes .
+// commit changes to finalise the changes 
+// back changes can be undo by using gitrevert / git reset .
+// reset is done on the cloud only 
+
+MASTER BRANCH TO BE LEFT UNCHANGED : 
+//no changes are to be made in the master branch 
+// no changes are to made in the developed branch  .
+// repo -> cloned and this difference branches are the master and developed branch 
+// command to look between the branches  -> git checkout. .
+
+
+
+Branches are of two type  // local and remote 
+Local branches in changes in the main repo .
+Local branches- >changes -> push -> copy made on the git known as the remote branch  .
+// if we are on the same branches then we push and pull .
+// if we are on different branch  , then  we have two further cases : 
+1. Take the changes 
+2. Make the changes 
+// there were changes made in the developed branches -> git rebase command is used to add the changes made by person  + changes made  by other peoples ;
+// There might be a conflict in the developed branches and then make the changes then make the push .
+// sometime the company / wants too know about the changes that are make in 
+Then there is need for pull request , then there is a review then comment are made
+// then change are made ., then again rebase then pr -> comment . , pr is always tracked and then the developer have a look into ..
+
+// if their are 2 different branch that u have to make the changes then make the rebase use
