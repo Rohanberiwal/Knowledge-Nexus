@@ -1,0 +1,35 @@
+vim 
+vim filename 
+i/insert data in vim
+ESC
+:wq/ - save and quit vim
+:w save only 
+:q quit 
+vim -R file name  only read mode 
+:q!--quit but dont save 
+esc + u -->reverse the changes done in the editor 
+r --> use to make direct changes 
+j --> move down 
+k --> move up
+l --> move right 
+h --> move left
+$-->move cursor to the end 
+0-->move the cursor to the startting 
+control + f ---> scroll down entrire page 
+control + b --> scroll up entrie page 
+:name of the page --> move to the specific page number
+w --> move to the next word ka first letter
+b --> move to the next previous word ka first letter 
+e --> move to the end of the current word 
+CUTTING AND PASTING IN A FILE 
+CAPS -D --> remove the whole line inn a file 
+CAPS - Y / yy--> copy the whole line in a vim file 
+p -->  paste after the line  in a vim file 
+P --> paste before the line in a vim file 
+/name of the word --> searches the word in the file 
+to highlight a word :
+-->
+/ name of the word u want ot search in the file 
+:set hlsearch 
+this command will highligh everyword inb the file that u wanted to search 
+== --> auto indent 
