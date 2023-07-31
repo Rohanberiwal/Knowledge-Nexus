@@ -1,0 +1,416 @@
+Object oriented progamming oops in java 
+Reason to study oop 
+1) user defined datatype -> int , float , double . string etc
+Class : 
+storage container that has objects with same attributes/ have some common properties .
+eX ;
+class XII 
+student class -> rollnum , 12 percentage etx are common attributes . All these prioperties are stored in the student class .
+
+CLASSES - CREATION 
+new datatype creation 
+// creating a student data type 
+pakage oopsinjava
+  import java.util.*;
+
+class Main 
+  {
+    // making off the data type for the class
+    public static Student
+    {
+      int age ;
+      String name  ;
+      double percent ;
+
+    }
+    public static void main(String[] agrs)
+    {
+        Scanner sc = new Scanner(System.in) ;
+      Student x= new Student() ; //initialsition for the object
+      x.name = sc.nextChar() ;
+      x.age = sc.nextInt() ;
+      x.percent = sc.nextDouble() ;
+      System.out.print(" "+x.name);
+
+
+    }
+  }
+object crea5tion syntax 
+Classname objectname = new Classname() ; // syntax 
+example 
+student s1= new student() ;
+object are instances of the class . very impiortant statement 
+When to use array nd when to use classes ?
+array are used when we want simialr data type usage .
+classes are use top work with different data types 
+object with multiple attributes use . 
+
+
+Class in different files 
+car class examples 
+// creating a car class 
+import java.util.*;
+class Main 
+  {
+    public static class Car{
+      String name ;
+      int model ;
+      String brand ;
+    }
+    public static void detail(Car x)
+    {
+      System.out.println("  name "+x.name);
+      System.out.println(" model "+x.model) ;
+      System.out.println(" brand "+x.brand) ;
+    }
+    public static void main(String[] agrs)
+    {
+      Scanner sc = new Scanner(System.in) ;
+      Car x = new Car() ;
+      x.name = sc.nextLine() ;
+      x.model = sc.nextInt() ;
+      x.brand = sc.nextLine() ;
+      detail(x) ;
+    }
+  }
+
+// new classes can be created in the main classes as well but we cannot update the values in those functions 
+fucntion whose values has to updated and returned has to be made outside the main 
+scope of a class / data type is within the main is in main only and not outside the main .
+
+Passing a class to a function 
+1) declare the function outside  the main .
+2) object is passed in the function the attirbutes of the object can be changed easily . 
+3)user defined data types are always passed by refrance in the other function . 
+CLASS IN DIFFERENT FILES 
+files of different classes should be in the same package .
+for using the file in the same projet we dont have to use any special command .
+when we have to use one object/ class in the other project 
+import filename.classname ; syntax need to be used .
+thr other name of project is package
+
+Ascess modifiers 
+default values 
+example for a bank management system
+import java.util.*;
+class Main 
+  {
+    static void printing(Bank bk)
+    {
+      System.out.println(" name "+bk.name) ;
+      System.out.println(" age "+bk.age) ;
+      System.out.println(" banknumber "+bk.banknumber) ;
+      
+    }
+    public static class Bank
+      {
+        String name ;
+        int age ;
+        int money ;
+        int banknumber ;
+      }
+    public static void main(String agrs[])
+    {
+      Scanner sc = new Scanner(System.in) ;
+      Bank bk = new Bank() ;
+      printing(bk) ;
+    }
+  }
+
+output **
+null  , 0 , 0 . // this are called the default modifiers  that are set before 
+Ascess modifiers 
+use to grant permission and give the ascess to the user .
+
+Public  -> all packages 
+private -> same class 
+default -> same pacakge
+
+Use of the package means this cannot be used in the different files or they can be used in only one class not other package 
+example ; // single file package 
+
+
+import java.util.*;
+class Main 
+  {
+    static void printing(Bank bk)
+    {
+      System.out.println(" name "+bk.name) ;
+      System.out.println(" age "+bk.age) ;
+      System.out.println(" banknumber "+bk.banknumber) ;
+      
+    }
+    public static class Bank
+      {
+        String name ;
+        private int age ;
+        private int money ;
+       private  int banknumber ;
+      }
+    public static void main(String agrs[])
+    {
+      Scanner sc = new Scanner(System.in) ;
+      Bank bk = new Bank() ;
+      printing(bk) ;
+    }
+  }
+private same file me only used 
+default same pacakge me only used 
+public can be used in different package 
+setter is always used before the getter  function otherwise it will returnb null values .
+example of this is 
+import java.util.*;
+class Main
+{
+  public static void detail(Car c)
+  {
+    System.out.println(" "+c.name);
+    System.out.println(c.age);
+    System.out.println(c.price);
+  }
+  public static class Car
+  {
+    String name ;
+    int age ;
+    int price ;
+
+    public String getName()
+    {
+      return name ;
+    }
+    public int  getAge()
+    {
+      return age ;
+    }
+    public int  getPrice()
+    {
+      return price ;
+    }
+    public void setName(String name)
+    {
+      this.name = name ;
+    }
+    public void setAge(int age)
+    {
+      this.age = age ;
+    }
+    public void setPrice(int price)
+    {
+      this.price = price;
+    }
+
+  }
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in) ;
+    Car c = new Car() ;
+    c.setName("maruti") ;
+    c.setAge(12) ;
+    c.setPrice(20000) ;
+    if(c.getName() =="maruti")
+    {
+      detail(c);
+  }
+}
+}
+// example for 2 way input one by constructor and other by the hardcoding
+import java.util.*;
+class Main
+{
+  public static class Student
+  {
+    String name  ;
+    int age ;
+    int grade  ;
+    public Student(String name  , int age , int grade)
+    {
+      this.name = name ;
+      this.age = age ;
+      this.grade = grade ;
+      System.out.print("name :"+this.name);
+       System.out.print("age :"+this.age);
+        System.out.print("grade  :"+this.grade);
+    }
+    public String getname()
+    {
+      return name ;
+    }
+    public int getage()
+    {
+      return age ;
+    }
+    public int getgrade()
+    {
+      return grade ;
+
+    }
+    public void setname(String name)
+    {
+      this.name = name ;
+    }
+       public void setage(int age)
+    {
+     this.age = age ;
+    }
+       public void setgrade(int grade)
+    {
+      this.grade  = grade ;
+    }
+  }
+  public static void main(String args[])
+  {
+    //Scanner sc = new Scanner() ;
+    Student s = new Student("rohan",19,2) ;
+   
+  }
+}
+What is the use of final keyword ?
+one the name / age / attribute of a object is final then no getter or setter can change it to the other name / attribute 
+example for the same ;
+import java.util.*;
+class Main
+{
+  public static class Student
+  {
+   final String name ="rohan"  ;
+    int age ;
+    int grade  ;
+   
+    public String getname()
+    {
+      return name ;
+    }
+    public int getage()
+    {
+      return age ;
+    }
+    public int getgrade()
+    {
+      return grade ;
+
+    }
+    public void setname(String name)
+    {
+      this.name = name ;
+    }
+       public void setage(int age)
+    {
+     this.age = age ;
+    }
+       public void setgrade(int grade)
+    {
+      this.grade  = grade ;
+    }
+  }
+  public static void main(String args[])
+  {
+    //Scanner sc = new Scanner() ;
+    Student s = new Student() ;
+    s.setname("rohit");
+   System.out.print(s.getname());  
+  }
+}
+
+What is static keyword ? 
+in a student class if we wish to calcuate the total number of student then after the initialistion of the constructor the number has to be added again and again so the neumber in the constructor show a fix value . 
+example 
+studeent++ // to calcaute the net student in the class 
+the key point for this is that for a counter element we should have the counter as the property of class and not of the object .
+here the sum of the number of student is the property of object and not the class 
+static keyword is used to make the changes witht the previous additon / sum . 
+static int num ++ will be a class object now and not a object attribute .
+A PUBLIC STATIC FUNCTION SHOULD RETURN A PUBLIC STATIC ATTRIBUTE . 
+ANY ATTRIBUTE WHICH IS NOT A PUBLIC AND A STATIC ATTRIBUTE WILL GIVE ERROR FOR THE RETURN FROM A PUBLIC STATIC STATIC FUNC /
+Static is used if we want to asceess the function i9n the class .
+synatax is classname.function .
+Final project java class fraction cacluator 
+import java.util.*;
+class Fractioncalss 
+{
+    public static void Scanner()
+    {
+        
+    }
+    public static void add(Fraction f , Fraction s)
+        {
+            Double dsum = (f.dem1)*(s.dem2) ;
+            Double nsum = ((f.dem1)*(s.num2)) + ((s.dem2)*(f.num1)) ;
+            System.out.println(" "+nsum) ;
+            System.out.println("---") ;
+            System.out.println(" "+dsum) ;
+        }
+        public static void subtract(Fraction f , Fraction s)
+        {
+            Double dsum = (f.dem1)*(s.dem2) ;
+            Double nsum = ((f.dem1)*(s.num2)) - ((s.dem2)*(f.num1)) ;
+            System.out.println(" "+nsum) ;
+            System.out.println("---") ;
+            System.out.println(" "+dsum) ;
+        }
+        public static void multiple(Fraction f , Fraction s)
+        {
+            Double dsum = (f.dem1)*(s.dem2) ;
+            Double nsum = (f.num1)*(s.num2);
+            System.out.println(" "+nsum) ;
+            System.out.println("---") ;
+            System.out.println(" "+dsum) ;
+        }
+        public static void divide(Fraction f , Fraction s)
+        {
+            Double dsum = (f.dem1)*(s.num2) ;
+            Double nsum = ((s.dem2)*(f.num1)) ;
+            System.out.println(" "+nsum) ;
+            System.out.println("---") ;
+            System.out.println(" "+dsum) ;
+        }
+    public static class Fraction
+    {
+        Double num1 ;
+        Double dem1 ;
+        Double num2 ;
+        Double dem2  ;
+        
+        
+    }
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in) ;
+        System.out.println("welcome to fraction class ") ;
+        System.out.println("Choose the operation  ") ;
+        System.out.println("1. ADD") ;
+        System.out.println("2. MULTIPLY ") ;
+        System.out.println("3. DIVIDE  ") ;
+        System.out.println("4. SUBTRACT ") ;
+        int choice = sc.nextInt() ;
+        Fraction f = new Fraction() ;
+        System.out.print("enter numerator ") ;
+        f.num1 = sc.nextDouble() ;
+        System.out.print("enter denomintor  ") ;
+        f.dem1 = sc.nextDouble() ;
+        System.out.print("\n");
+        Fraction s = new Fraction() ;
+        System.out.print("enter numerator ") ;
+        s.num2 = sc.nextDouble() ;
+        System.out.print("enter denomintor  ") ;
+        s.dem2 = sc.nextDouble() ;
+        if(choice==1)
+        {
+            add(f,s) ;
+        }
+        else if(choice ==2)
+        {
+            multiple(f,s);
+        }
+        else if(choice ==3)
+        {
+           divide(f,s) ;
+        }
+        else 
+        {
+          subtract(f,s);
+
+        }
+
+    }
+
+}
