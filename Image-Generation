@@ -1,0 +1,39 @@
+Introduction to image generation 
+Introduction to diffusion models
+
+Dfiisuion model have shown a tremendous improvement in the image generation  .
+There have been a lot of families in the reacent year that have shown a adavncemebnt in the image generation such as 
+1) variational autoencoders ->VAe's 
+These model encode the images to compressed sizes and then decode back to the original size , while learning the distribution of the data  .
+2)Generative adversarial model -> GAN's 
+pit two neural network with one other .one of the neural network generates the imaages and the other neural netwrok is called the discriminator while tests if the given imatges is real or it is fake  .
+With the course of time the discrimnator gets better at pointing out the real and the fake images .
+
+3) Autoregressive models
+Generative images by treating the image to series of / sequence of pixels .They are inspired from the large langauge models(LLMS)
+
+Diffusion model are inspired fronm the branch of physics namely thermodynmics . 
+They were the first one to geenrate images .
+They are the most popular models  .
+They are divided into two types mainly : 
+1) conditon diffusion models -> There is a input provided in this for exmaple a huuman face , etc 
+they can generate text -> images .
+they can also do image inpainting meaning removing a specific person from a family photo .
+Guided images like a dancer wearing blue dress with red light glowing .
+2) unconditional diffused models -> no input needed . They generate the photo and the images on their own .
+A biggest used in the uncondional images is the super-RESOULTION where the low quality images are modified in such a ways that there is  a drastic transformation in the low quality image .
+
+A DEEPER DIVE Into THE DIFUSSION  MODEL ->
+Main idea -> first we try to add noise to an image then train the model such that the model knows how to de-noise the system  thus generating the novel images .
+the additon of the images in the system is done iteratively . 
+
+noise means destroying the pixels or making the image blurr  .\
+After continous additoon of the noise in the system there is a state when teh images gets pure noisy and the image is complelty gone .
+
+going from a nosiy to a de-noisy process is called the reverse - diffsuion process .
+with the course of time the model becomes an expert in removal of noise form a system .
+
+Denoise - diffusion probalistic model generation working - >
+How do we generate images with this approcah ? 
+we take  a image with noise in that then we pass it through the trained model and then get the output about the predicted noise present in the images then subtrct the noise from the images , do it constantly we get the images .
+the result is a generative images . 
