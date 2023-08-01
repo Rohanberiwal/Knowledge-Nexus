@@ -1,0 +1,58 @@
+Transformer and BERT models 
+reacent year used neural netwrok to generate text , images etc . 
+The major sucess was the attention machenism  , transformer and llm in 2017  .
+The research papper that defined the transformer was "attention is all you need" came up in 2017 .
+The moeel before transformer represented the object by vector , the contect of the words/ vector were changed accroding to the sentence and the refrance . 
+Ex ->bank in river bank and bank in bank riobbery  .
+
+What is a  transformer ?
+A transformer is a encoder - decoder model that uses the attention mechansim .
+it takes the advantage of paralellization  .
+Attention mechansim is a adavnateg for these to do the compuation .
+
+Basic model of a transformner ->
+The transformer has 2 main unit  :
+encoder - > this is the ubnit thta is used to encode th data .
+decoder -> this is the unit that is used to decode the data  for a revelant task .
+IN the first model that proposed the transformer there were a total of 6 endcoder and a 6 decoder unit in the model first tinme proposed .
+
+In that paper 6 was just a hyoperparameter given for the number of decoder and tencoder unit  .
+
+The structure of encoder -> 
+self attention layer -> the self atterntion passes the input of the sentences and encode the input word .  
+Feed forwad layer -> the output of the self attention layer is passed through the feedforward neural netowrk  . 
+There are same work for feedforward neural network in each encoder unit . 
+In the decoder layer there are self - attention  , feedforward neural network and there is also a encoder - decoder attnetuion unit . in the decoder .
+
+Vector passes through these very smoothly with proper encoding and decoding  .
+encoder - decoder attention layer focus on the main keyword and the main inoput kerywords 
+There are dependencies in the self attention layer and the feedfowards neural network , 
+The feedforward unit in each encoder are not dependent on each other  and multiple computation are supported in paralell  .
+
+In the self attention layer there are multiple steps that are being executed : 
+the data is first broken down into multiple unit such as 
+
+1) query vector 
+2)key vector 
+3) value vector 
+then there is a formation of learned weights .
+The computation is done using weights that the tranforme leanrs during the traning process   / learning  .
+In this the computation is in the form of matrix computation .
+the formula used is : 
+softma (x) {query val * (key mtrix)transpose / data value(tinyvalues)}*value vector  = z vector(matrix) .
+Proper computation is done and the revelent values are taken into consideration  , rest are discarded . 
+
+STEP-2 
+now each output that u get after doing the above maths , add them up and pass them to the feed forward neural netowrk .The output of whole attention layer is passed into the systemfor the feed forward neural network . 
+
+Overview of computation 
+1-> input the sentences . 
+2-> embed each word 
+3-> perform multi headed atteention and multiple embedded word with the respective weighted matrices  . // calcuation part (matrix multiplication)
+Calculate the attention with using the resultant matrix .
+
+// concatenate the matrix. 
+What are the different transformer ? 
+some of the transfomer has only encoder and some has encoder+decoder . 
+The encoder only model is BERT (bidirectional encoder representation from transfornmer)
+This was developed by google in 2018 .
