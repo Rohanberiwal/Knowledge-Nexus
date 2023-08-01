@@ -56,3 +56,36 @@ What are the different transformer ?
 some of the transfomer has only encoder and some has encoder+decoder . 
 The encoder only model is BERT (bidirectional encoder representation from transfornmer)
 This was developed by google in 2018 .
+The bert model was trained for 1 million problem and the whole wikipedia was feeded to ther bert model .
+
+BERT is made for multi tasking . 
+Bert has 2 varients basically -> the bert base and the bert large . 
+bert base has 12 layer and bert large has 24 layers  . in comparison to the bert with 6 layers  .
+BERT worked on : 
+Masked lanaguage models(MSMS)
+In this there is a sentance givne with some fill in the blanck and we have to predict the work that fits in the most appripraite way .
+This is also called the masking of the word . 
+around `15% in a sentance the masking is done . 
+if more masking is done then it becomes inapporpraite and less makes it expensive .
+ 
+Next sdentance predication(NSP)
+predict the whole next sentence after one given sentance . 
+given A then predict B .
+
+
+Training of BERT()
+for the bert trainig we have to feed three different thing ->
+1) tocken embedding 
+2) segment embedding 
+3) position embedding 
+tocken embeddign are the basic sebntances that are fed into bert . 
+example -> my dog is cute he likes playing .
+segmant embeddign -> this is used to distinguish between the two token embedding recieved .
+SEP is aspecial type of a segambnt embeddign that is used to seperate the two sentances  .SEP IS THE UNIT in bert  .
+
+The input sequence in bert is 512 length .
+The order of the input sequence is maintained by the segment called the postion embedding   .
+
+
+Bert is used in the single process classficaitionlike the npl task -> natural langauge processing . 
+
