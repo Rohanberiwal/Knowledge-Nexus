@@ -1,0 +1,27 @@
+Recurrent Neural network (RNN)
+->ROHAN BERIWAL 
+An encoder and decoder architecture help in the conversion of the encoded and the decoded data  . When passed into the llms this helps in the langauge conversion from  one langauge to anathor lamgauge .
+example english to french converter .
+Encoder - Decoder has 2 stages 
+1) ENCODER STAGE - in this stage the output is the vector representation fornm of the input data that is being provided  .
+2) Decoder stage -> this creates a sequence output . 
+both encoder and decioder are implemented with different architectures  .
+The internal mechanism of the encoder - decoder can be recurrent neural network . This can also be a complex transformer example for this is in the case of superpowerful; langauge models .
+
+With the advancement there is a predication that is being carried out .  First the first token is predicted then the second one then the third one  is predicted . 
+ 
+The vector output from the encoder is passed to the decoder then the proper format of the sentance is givem out as the output .
+
+There is a encoder and a decoder training needed  , for the output prediction . 
+A proper data set has to be feeded to both for example a proper labeled daat has to be provided to encoder and to the decodeer to give the output / specific output . 
+
+Teacher force training on the decoder -> in this mehtod the decoder is forced to make the next tocken predicted on the basis of the previous token being correctl6y predicted . 
+
+For the prediction of the next word there is a layer made in the decoder unit that has some work that needed to be predicted for the proper vocalblary . 
+Each word has some probabibilty assocaited with it in this layer 
+Some of the method 
+1-> GRID SEARCH METHOD -> This method brings up the word with the most probabilistic outcome on the top for the next token . 
+2-> BEAM SEARCH -> In this the word with the probability of the word helps in the generation of the probability of the sentences either the sentqance sounds correct or not . 
+
+Deployment -> using a keyword like go to start generation of the sentances .
+RNN IS REPLACED BY THE TRANSFOMER RATHER  . BASED ON THE ATTENTION MECHANISM 
