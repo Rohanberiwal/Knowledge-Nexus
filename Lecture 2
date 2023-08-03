@@ -1,0 +1,34 @@
+Lecture 2 
+package --> the file/ folder where a there are a lot of classes . 
+if there is a single class only then the name of the package can be nameofpackage.nameofclass .
+
+different pacakge are ascessed with the help of ascess modifiers , that are mainly public , private etc .
+
+A static property that is common and contatn for all the object in the class .
+exanmple the population method is common to all the humans .  The popoulation is same for the two object to the human . 
+this.staticvaribalename = x is a syntax  .
+for the ascess of the static variable there is a need for the instance variable .
+for the ascess of the static variable you should use the class name itsefl rather than the object.attributename .
+
+when the word static is used then the attribute of the object can be used before the creation of the word . so that is why the static keyword  can be used as the a simple function call . 
+Static can be used before the refrance of the object unlike the non static variables .
+
+What is the meaning for a method to be static ? 
+the main meaning of the method to be static is that without creartion of the object of the class in the main we can ascess the class / method . 
+## INSIDE A STATIC METHOD WE CANNOT CREATE SOMETHING THAT IS NOT STATIC  . WE Cannot even call that function . 
+## Somthing that is not static always belongs to an object  .
+Static method call only static method . 
+How are the static variable are initialised ?
+The static variable in a program are always used once in the whole program . 
+After something is initilised in a class static block then there is a only the movement once not everytime the loop is started the loop just works once , makes the updates then shutoffs .
+When a method is defined in a bnon static class then the method alsio by default become non static hence either it has to be defined outside or it must be defined inside  the class wuith a static keyword in fornt . 
+#inside a class if there is a function (static) and other class that is static then the two can have each other's object  .
+
+## Since the static method does not require object  / does not create objects the objects are always created at the runtime and not at the compile time  .
+Static method always run at the complie time . 
+
+
+Print statement is a biggest example of polymorphism . 
+we can create any word to string using toString method .
+
+For a class if we want to use only one object then using singleton class is a very very good option . 
