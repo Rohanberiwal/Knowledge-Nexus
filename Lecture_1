@@ -1,0 +1,53 @@
+Class -> logical construct 
+object -> physical reality of the class . 
+The obj ARE cateigorised by 3 main features - >state , behaviour , identity .
+state -> value form the user or friom the function . 
+identity -> means the value in the memeory , memeory allocation two memeory  object pointing to the same memeiory space the change in one  causes the change in the other  .
+behaviour -> the effect of the data type operaton , fronm the functions . 
+
+object are store n the heap memeory and the refrance varibales are stored in the stack memeory .
+
+instance variable -> the varibales inside the class are the instance variables . 
+property of the class instance are the instance variables .
+"." is used to link the instance varibale with the instance object .
+example if of  student class -->
+Student student1 = new student() ;
+the left hand side part run in complie time  , the right hand side run in the runtime .
+object refrancing to a random address is not allowed in java  .
+
+"new" is used for dynamic memeory allocation . 
+without setvalues the defualt values are the answer for each attribute of the object .
+
+constructor -> used to make object . 
+
+constructor overloading // example of polymorphism 
+
+when the constructor is having both keywords + not keywiord passed asa refrance but both are defined then it is called the constructor overloading .
+anathor way to make a student constructor is 
+student()
+{ 
+this(name of all the attributes) ;
+
+}
+
+pimitive data type in java are stored in stack and not in heap . that is why when int is declared we never use "new" keyword .
+
+pointing one objevct to anathor means in the memeory we are pointing to the same memeory address . 
+
+there are more attriburtes shoen for integer class than the int class . // this is a example of a wrapper class  
+writing the full name of a class is called the wrapppe class and hence the wrapper class can be used . 
+when object are passed in the function then the object' address or the object refrance values are passed .
+
+IMPORTANT SECTION . "WRAPPER CLASS / FINAL "
+wrapper class's operation does not changes the object 'state / behaviour / identity becuase these have a word name final in the function name .
+hence once initalised they have the same value and the value of the object from the wrppar class is :"final" .
+the wrapper class is not final but the instance's attribute are final in this .
+The imutability for the not change in the values from the final keywrod is only valid for the primitive data type and not for the newly defined data types . 
+if the data type is anew daat type defined by the user then evem if we use final keyword in the data type we can have the change in the attributes .
+
+There is a automatic garbage collector in java .ALSO there are no desructors just like there is a one in c++ .
+manual destruction uin java is not allowed .
+
+
+
+ 
