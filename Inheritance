@@ -1,0 +1,53 @@
+object oriented progremming 
+Most important lecture 
+
+Topic covered -> inheritance . abstraction , polymorphism and encapsulation . 
+Inheritance
+A particular class is able to inhert the attribute of the parent class is called inheritance  .
+the sub class is called the child class and this extends the parent class . 
+The child class always inherits the properties from the base / parent class . 
+Syntax -> class xyz extends abc {} where abc is parent and xyz is the child . 
+super(parameter) // this is the synatx to set the values of the parentclass . 
+super is the keyword that is used to call the parent class constructor . 
+from Private parent class the child cannot inhert the parents's private attribute .
+The object created in the parent class cannot ascess the variables of the child class . 
+It will give a error . 
+It is actually the type of refrance variable and not the cosntructor / object that determines which of the parts of the function the object can handle . 
+example 
+parent -> box 
+child  -> boxweight 
+if we make a function 
+Box box1 = new boxweight() ;
+then the object box will only have the attributes of the parent box since the left hand attribute decided the attirbute of the object being created  .
+The refrance variable in the above is the super class which is the parent class .
+
+private attribute of parent class are only for the parent and not for the child class . 
+case 2 for the above ->
+we cannot have a child refrance varib=ble such as 
+parent -> box 
+child = boxweight 
+boxweight box = new box  ;
+in this the values of child are passed but the user can only ascess the attribute of of the parent class since some of the method in the parent that are not defined cannot be ascessed or those values will only give error .
+
+Every class created by the user points to the object class that is being created by java itself . 
+
+During multi-inheritance if there is a super class made then that will point to the  previous class and not the first class being created . 
+ if we wish to assceess the attibute of the super class then we can use super(name).classname .
+TYPES OF INHERITANCE 
+1) single inheritance -> In THIS one class extends anathor class . 
+2)Multi -level inheritance -> There are multiple subclass with many superclass .
+ex -> grandfather -> father -> child -> child's son  .
+
+3) multiple inheritance ->when one class is extending  more than one classes . 
+for example -> c extends a AND  c extends b (niot supported in java) .
+although we can do multiple inheritnce with the help of interfaces .
+
+4) hierarchial inheritance -> one class is inheritaed by many classes . 
+example -> b,c,d,g,h inherts / extends a 
+
+5) hybrid inheritance 
+ this one is a combination of single and multiple inheritance , again not supported in java . 
+AFTER INTERFACE WE CAN SOMWHAT IMPLEMENT IT . 
+example -? b,c inherts a and then d inherts b,c  .
+psyque inheritance is not supoported again . The thing is irrevelant .
+A CLASS CANNOT INHERT ITSELF  .
