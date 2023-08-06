@@ -11,8 +11,8 @@ student class -> rollnum , 12 percentage etx are common attributes . All these p
 # CLASSES - CREATION 
 
 new datatype creation 
-// creating a student data type 
-pakage oopsinjava
+> creating a student data type 
+> pakage oopsinjava
 ```java
   import java.util.*;
 
