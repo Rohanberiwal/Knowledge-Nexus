@@ -8,7 +8,7 @@ eX ;
 class XII 
 student class -> rollnum , 12 percentage etx are common attributes . All these prioperties are stored in the student class .
 
-CLASSES - CREATION 
+# CLASSES - CREATION 
 new datatype creation 
 // creating a student data type 
 pakage oopsinjava
