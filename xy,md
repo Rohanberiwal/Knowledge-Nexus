@@ -1,0 +1,26 @@
+```java
+  import java.util.*;
+
+class Main 
+  {
+    // making off the data type for the class
+    public static Student
+    {
+      int age ;
+      String name  ;
+      double percent ;
+
+    }
+    public static void main(String[] agrs)
+    {
+        Scanner sc = new Scanner(System.in) ;
+      Student x= new Student() ; //initialsition for the object
+      x.name = sc.nextChar() ;
+      x.age = sc.nextInt() ;
+      x.percent = sc.nextDouble() ;
+      System.out.print(" "+x.name);
+
+
+    }
+  }
+```
