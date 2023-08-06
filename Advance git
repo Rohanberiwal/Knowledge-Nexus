@@ -1,0 +1,18 @@
+Git notes -2  // advanced git 
+
+to the total number of branches in the files-> git branch -a 
+to make a new branch we can do it using-> git branch name.branch/file.name  ;
+there is a local copy and there is a permanent copy 
+to delete a branch -> git branch -d branch.name 
+to get the histroy in  a branch -> git log 
+to clear the terminal -> clear 
+to check the status of the present system -> git status .
+to get to a branch or to chnage a branch we have o used -> git checkout name of the branch , name of the file 
+to commit changes use -> git commit -m ""
+to select all the file in a branch we use -> git add *
+all the chnages in one banch will not be seen in the other branch . 
+if we dont push a branch then the  changees will not be seen in the repo  ;
+untack file can be ascessed using the git add *method 
+untrack file can be deleted easily . 
+
+
