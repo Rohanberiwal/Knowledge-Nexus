@@ -1,0 +1,39 @@
+Image Captioning model
+How to create a simple image capitioing model using the encoder - decoder , attentionmechansim and transformer .
+These model autoatically write text in the bottom of the image and predict the task being performed in the image  .
+An encoder and the decoder model based image captioning has following thing / machiones in it  :
+1) input image 
+2) Cnn image encoder 
+3) caption decoder  .
+1-> The image innformation ius extracted from the image and vecotr are being created . These are called the feautured vecotrs ,then this is passed through the decoder that generates ther captioning text . 
+The cnn image encoder has several software like resnet , vision encoder that are used as a backbone .
+These backbone helps in the exctract of the information form the same  . 
+For this tf keras is used from tensorflow , inception resnet v2 application form the keras is used . this is a library  . 
+The output of the text is a recurrsive process that is executes eseveral times . 
+
+Mechanism -
+1) The first layer called the embedded layer is used for creating the word embeddings . 
+2) Next this is passed into the gru layer  ,, gru is a varitional unit of recurrent neural network , or simply it is rnn only .
+Rnn takes the input update the states and then genrate the outputs . 
+3) THis is the unit where the attention mechanism is used that is used to mix the images with the text or the audio . 
+Tnsforflow tf allowes the user to use the predefined layers  . 
+The attention layer  gives two output one is the gru output the other is the encoder output .The encoder output is the the actual output . 
+Gru output is used a query and key and the encoder is used as a value . 
+
+Add layer and layer normalization  layer -
+Add layer is used to add two same shaped vectors   . The flow of passuing the key and query output and adding the vector of the same shaped is combined into the add layer and this is called the "skip connections " .This is a well defined architectue . 
+
+This is also called as the residual neural network  since it was defined in the resnetv2 .
+
+Inference loop overview  :-
+there are 3 steps for this->
+1) generate the Gru initial state and create a start token  . 
+2) in the tensorflow keraas the inital state of gru is handeled automaticlly . 
+3) The decoder ih the image captioning is known to be in the autoregressive state  .
+4) Pass an input image to the encoder and extracrt the vector . 
+5) Pass the image to the decoder for the generation of the text and the caption  . unit end statement is implemented .  
+
+The 5 th step return the max_length caption or the n type text which us just a hyperparameter  . specifying some number . 
+This infernce loop is called autoregressively to generate the texts .
+The start tocken is human developed while the end is developed by the decoder  . 
+
