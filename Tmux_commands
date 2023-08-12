@@ -1,0 +1,24 @@
+Tmux - Linux 
+terminal multiplxer tool use to split the windows and split into panes  .
+tumx is ideal as the process keeps on running even if we close the screen hence the efficiency is increased .
+multi tasking cli is tmux only  , avaible for all linux disto . 
+to see the version of tmux use tmux -v .
+also to install the tmux use -> sudo apt install tmux . 
+
+to start a tumx session use tmux . 
+
+the astercik * is used to see the window we are using . 
+To detach from a tmux use -> ctrl + d+ b  
+this put the user back to the original shell. 
+to attach to a tmux seesion use -> tmux attach -t number of session. 
+to create a new tumx window -> ctrl + b+ c .
+to change the name of current windwo use -> ctrl + b + , 
+to go to othered numbered windows -> use ctrl + b+ 0=9 numbering  
+to go to previous window use ctrl + b +p 
+last used window ctrl + b +  l ;
+close a window using ctrl +b + &
+to split a window use ctrl + b +%
+name a session using ctrl + b + $
+active window -> ctrl + b+ w 
+list of session ctrl + b+ s
+to list the commands use tmux - list commands 
