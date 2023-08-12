@@ -1,0 +1,42 @@
+Descision Tree -> Machine learning 
+
+This is used for binary classification for the supervised machine  learning .
+This is used for setting the predictors and use to match the outcome  .
+Used yo show how machine is making the descision .
+This is used to generate outciome and see how the machine makes some descision  .
+First set the predictor to generaste the outcomes .
+The output is binary descision . 
+The first set of outcome are broken into sub out comes;
+
+K- nearest neighbour-> machine learning 
+
+This is used in multi class classifiaction . and this is also called as the lazy learning . 
+There is a builk computation right before u want to classify the data .
+There is a com0pution in one big instance and there is a one big splash . 
+We get the quality and the hyperparamter for a given data  .
+The k NN takes a lot of computation power .
+This cannot vbe used for a very very lareg data set .
+The distance between the nearest and the unpredicted neighbour reduces as the character matchs .
+This is done with the help of euclidian distance . // used to classify on the basisi of point distance .  
+But for the predication of the type of dog we have to speciffy the k uin th knn  .
+
+K mean clusrtering -> Kmc .
+This is based on unsupervised machione learning . 
+based on clustering the computation is done . 
+in the clusteer k random objkect are chosen  whcih are called the centroid bojects ,
+out of the n*n matrix of the obejct it pick out the best cluster .
+if there is a change in the clustering then this is called as the high overlap of data  .
+
+Regraession -
+The above algorithm is instance based machine learning ans these are based on lazy learning , but sometimes continous machihe learning algrothim is used , there have regression analysis in them . 
+In this we look at the relationshiop between the predictor and the outcome . The most accurate predication are they are used to test the prediction and then analysise if it work with the normal data  .
+Linear regression 
+> in this we try to make a straight line betwen the predictor and ther outcome .
+> Then best prediction are made from this . 
+> There are questuion on if the regression analysis is a machine larning algo or not . 
+
+Naive Bayes algiorithm 
+This is based on the conditional porbability and based on the if one of the thing depend on the other . 
+
+This is usedd for binary or used for multi class classificATION   .
+A class predictor probability is calcuated then output is carried out . 
