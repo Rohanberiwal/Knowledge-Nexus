@@ -1,3 +1,6 @@
+Machine Learning 
+~Rohan Beriwal 
+
 Descision Tree -> Machine learning 
 
 This is used for binary classification for the supervised machine  learning .
@@ -15,7 +18,7 @@ There is a builk computation right before u want to classify the data .
 There is a com0pution in one big instance and there is a one big splash . 
 We get the quality and the hyperparamter for a given data  .
 The k NN takes a lot of computation power .
-This cannot vbe used for a very very lareg data set .
+This cannot vbe used for a very very large data set .
 The distance between the nearest and the unpredicted neighbour reduces as the character matchs .
 This is done with the help of euclidian distance . // used to classify on the basisi of point distance .  
 But for the predication of the type of dog we have to speciffy the k uin th knn  .
@@ -23,20 +26,58 @@ But for the predication of the type of dog we have to speciffy the k uin th knn 
 K mean clusrtering -> Kmc .
 This is based on unsupervised machione learning . 
 based on clustering the computation is done . 
-in the clusteer k random objkect are chosen  whcih are called the centroid bojects ,
+in the clusteer k random object are chosen  whcih are called the centroid bojects ,
 out of the n*n matrix of the obejct it pick out the best cluster .
 if there is a change in the clustering then this is called as the high overlap of data  .
 
-Regraession -
+Regression -
 The above algorithm is instance based machine learning ans these are based on lazy learning , but sometimes continous machihe learning algrothim is used , there have regression analysis in them . 
 In this we look at the relationshiop between the predictor and the outcome . The most accurate predication are they are used to test the prediction and then analysise if it work with the normal data  .
 Linear regression 
 > in this we try to make a straight line betwen the predictor and ther outcome .
 > Then best prediction are made from this . 
-> There are questuion on if the regression analysis is a machine larning algo or not . 
+> There are question on if the regression analysis is a machine larning algo or not . 
 
 Naive Bayes algiorithm 
 This is based on the conditional porbability and based on the if one of the thing depend on the other . 
 
-This is usedd for binary or used for multi class classificATION   .
+This is usedd for binary or used for multi class classification   .
 A class predictor probability is calcuated then output is carried out . 
+
+Bias is the gap between your predicted value and the actual outcome  .
+Variance is when your predicted value are scattered all over the place .
+
+Some of theimportant then are  :
+high bias / low variance  = consistenly wrong  
+high bias / high variacne  = consistenly wrong in an inconsistent way  
+The bias and variance are the different wasy of measurement of your predicatin and the outcomes. 
+
+
+Designing a model that has a smaller training set but is flexible for large data set this is called the undefitiing  .
+Desigining a mdioel with lareg data set and is so complex that the output is very difficult to understand this is called the overfitting .
+Combination odf supervised and regrwession will give a trend to see the data .
+Signals and noise ->
+signals -> this is something that u can use to make a accurate predication while noise is somehting that might not be be natural variance in the data that might not offer any insights . 
+
+using a proper algorithm ->
+supervised -> labelled data
+unsupervised -> unlabelled data machine makes its own cluster and analysis that which one make more sense
+load of unlabelleed data -> k mean clustering . 
+load of labelled data- > regression   / knn / desision tree .
+choose the high performance computing .
+
+Enasemble modelling ->
+bagging -> several version of the model are made  .
+boosting -> let the machine decide if there are a lot of group  / clustering . 
+stacking  -> stack several algorhtium to improve the comptuing . 
+Feautred weighted linear stacking . 
+
+Stack -> k nearest neighnour -> descision tree
+
+
+
+
+
+
+
+
