@@ -1,0 +1,62 @@
+Linux -> multitasking at linux commnads 
+Job control in the shell
+to get the ascess to the shell even if a process is running the we can use & in the last 
+to run a random process use -> ./run - timelimit - seconds.sh & (ampersand will give the process id and ther job number that has to be exectued ) .
+Amprersand will also allow the use to start many process in the background at the same time without terminating the cureent process .
+Running a process in the background can help the user to make several changs and optimised the computation speed if the user knows that the process that is running in the background does not reqire any input commnads .  
+An example for the same is ./run - forever-quietly.sh  
+there is no standard output and control +z can interrupt the process  . 
+command help.jobs will help the user to know more about the index[] and the numebr that is being shown in while using the ampersand  & in the last . 
+
+There are two shell built in that are use for the job control and those are -> fg and bg 
+standing for foreground and background  .
+This are used to contrl the states of the jobs 
+The numeric digit in the front of this are used to shown the information about the job control .
+To view the active job  or the processes use jobs in the commnad prompt 
+fg and fg - are two commnads use to see the job 1 and job 2 in the stack  .
+to permanent remove the job from the computer use kill % serial number or the index of the job . 
+example 
+kill %1 
+kill %3
+this will kill the 1 and 3 process respectively .
+fg ae use to go the forgoing processs those whcih were open firsrt 
+bg use to go the the corsee which are background that were opend afterwards  .
+
+commnad ps is used to see the procesds in the termianl  .
+All the user process can be seens using ps -u .
+to see the user process in the herierical view use ps -uf  .
+to see all the process on the system use ps -efj  .
+ps -efj use to see th id or the ppid means the parent process id .
+
+to know more about seigna use man 7 signal
+Running a task in the background allows you to keep using your shell while the task completes.
+terminal multiplexer allow use to use various window in the terminal and help us in running various processes .
+Allow the process to keep running even after the seerver is disconnected .
+
+some of the multiplexer tools are screen and tmux . 
+use screen -v to connect to screen session and to view the screen use this by using
+screen -list 
+
+
+screen commands  -> 
+
+to close the shell session for example a tumx on or a screen on  use ctrl +d 
+to bring back the screen we can use ctrl +a + ? 
+to make a child of the main screen use ctrl +a + c .
+top is use to see the number of thread ion the cores 
+use the ctrl +a + p to switch between the screen in the terminal  .
+ctrl +a + 0 -> to swtich quickly from one to the other window . 
+ctrl + a+ " to move between the windows . 
+ctrl + shift + a use to set the title of the window .
+ctrl + a + k usse to close the current window . 
+ctrl + a + d is use to detach the screen session  .
+ctrl +a + / use to force quit everything  , each window .
+ctrl + a +shift +s is used to split the winodw into horizontal session . 
+ctrl + a + shift +x is used to close the cvurrent pane  .
+
+detach process has still the child processe running but in a detached state . 
+to detach the window and attach some other window use -> screen -dr 
+to see the window in use we use ctrl + a + * .
+press q to end the process . 
+
+
