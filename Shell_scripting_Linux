@@ -1,0 +1,121 @@
+Shell scripting and processe in the cpu 
+Shell check if the commnad is in built or not
+Shell then check if the command is a alias of the other commnnd or not 
+Shell then looks if the commnad is tn the disk 
+> it searches fir the commnad in the path and if not found then gives thee errr .
+
+Shell properties
+>Some shell have more built in commnands  .
+>automated command option completion 
+> asdvanced conditional statements . 
+> more pattern matching 
+> powerful strign matching 
+
+portable operating system interface(posix)
+> This is a api or a feature that allows the portabibilty of codes from on eoperating system to anathor operating system  .
+> it inlcudes ap i , operating system , etc .
+
+Bourne shell(sh)
+created by stevem bourne 
+> one of the first shells 
+> prtoix compliant 
+> this had the fasirly simple commands 
+
+c shell (csh)
+> resembles c  langauge  .
+> not recommended for shell scripting 
+
+kornshell(ksh)
+> job control 
+>command history 
+> adavcned conditionals 
+
+bourne again shell (bash)
+> added features from csh and ksh 
+> default func of its own 
+>default oj most unix like operating system . 
+>  mostly poxis compliant .
+
+debian almquist shell(dash)
+> smalleer and faster than bash  .
+> poxis compliant 
+
+z shell(zsh)
+> features of bash 
+> better command cvompletion 
+> better otpion 
+> adavnced extended globs 
+> spell corretion
+
+
+zsh is the most powerful shell  .
+
+
+terminal vs shell 
+terminal is the window that we type into and nothing else 
+shell is the interper that convert the twext to the binary language . 
+
+xfce terminal has a tooolbar andf the gnome does not have one .
+
+cd ..akes to the parent directory that is one level up
+the . notation is givne by the file systems  and helps the user to view th files  .
+cd - take to the directory one dwon  means to the child  . this shows the path directly .
+The file cannot be copied using the hypen and this is the feautre of just the viewing the paths and the file name .
+
+cd is a shell function  .
+cd . -> file system
+cd .. -> file location  
+cd - > argument to cd commands
+cd ~ -> function of the bash shell. Takes the user to the home directory   .
+
+cd - expands to the $OLDPWD 
+dirs use to point to the top of the stack  .
+pop d to remove the top of the command  .
+using the tab can do the auto completion of the path for the user . 
+using the tab twice can open the same with the name of the possible files on the desktop  .
+up and down arrow use to see the previous commands  .
+history on the shell will show the previous commands  .
+
+re - run the commnand using the !* .
+!! -> this appends to the entire previous line . 
+HISTCONTROL -> NAME OF THE COMMAND TO CIONTROL . 
+using the man strftime caan be use to view the commnadsd that can be used to format the fisplay of the pevious histroy commnads .
+
+in the shell there are mainly 2 variables : 
+enviromental -> those defined for the currrent shell and are inherirted by the child shell or the processes . 
+
+
+
+shell variables -> they are contianed on in the shell they are defined and cannot be ascessed  by any other shell or the process . 
+
+to see the enviroment of the sehll we use -> echo $SHELL .
+run shell script is called the non - interacrtive non login shell system  .
+
+to execute the commnad on the shell use -> /etc/profile.d/*.sh command 
+to add the function use /etc/bashrc 
+
+~/.bashrc -> uses alias and the shell function  .
+/etc/bashrc > system alias and function . 
+
+File globbing >
+expands a file name containing wildcards character in the specific file name . 
+
+A file matches the following 
+file.txt 
+file.jpg
+file.tar.gz 
+this matches nothing or anything in the middle  .
+the asterick is not only the only gliob there is someghting callled the ? which is used to match the characters 
+the questioon marks is always more strict then the astericks .
+
+using the synatx called the file?.txt
+the kernal match the file1.txt and filea.txrt with the same  .
+in this the number of character matches the number of the character and using the fixed number would help the use to identify the same  .
+to match a combination of files use the smiple formula called this 
+file[-0-9].txt
+this output all the files from the 0->9 and hence the output is from 0->9 .txt .
+
+use the man 7 glob to get more help  .
+
+the asterick after a range match the whole rangees and do n*m computataion to do and match the proper combination . 
+
