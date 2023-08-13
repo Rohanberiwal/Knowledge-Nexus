@@ -1,0 +1,46 @@
+pipling -> linux  -> Bash 
+pipe in bash is a syntax that is use to run several command at once .
+this can be done by for exmpale say sort-r | head - l the thing in the betwewen is the piping 
+the -r use to rever the sort . 
+using the for loop will help a lot in making a large computation . 
+to get 10 sorrted files we use the following syntax 
+for -> ls - i | sort | head -10  ;
+list -1 is used to see the latest file sections  . 
+
+file operations  -> reading and writing or doing both .
+file reading  -> 
+this is done with the help of file -r 
+writing  -> this is done with the help of file redirection of the reader script to a file . 
+to wrtit the output we can use this in the two methods  
+./ reader .sh name.txt >output.txt
+this above make the output of names.txt into the output.txt file . 
+> cat / output.txt is used to see the file contents in the output.txg . this is command or we can say a synatx .
+
+now the second method  ->
+./reader name.txt >> output.txt 
+this has two > sign this is same ot the first command but it does not ereases the content of the files ouptut it only add the output to the  bottom of the file. 
+
+file checkusm  ->
+the check sum is used to check the size of the given bash file .
+adding or subtracing can chjanger the checksum values . 
+
+
+ sleep  ->
+sleep command makes the command sleep unitl they are needed . 
+the delay command is used to make a delay in the file or in the command and this makes the file sleep for some timne .maybe a few seconds  .
+using the ampersand at the last will show some of the addirtioanl information like the index , threadnumber etc  the process id and the thread execution .
+
+taking the user input -> 
+read - p "what is yout first name" NAME // the name or the word in the cap is called the variable and is used in the input . 
+output is echo"yout name is $name" 
+
+handling the bad data  -
+
+- p is used to put the data on the same line of the use line . 
+-z is used to chekc if the variable is empty or not . -z name of the container check if the conatiner ius empty or not . 
+to check if a string is a alphebetics we use $name = ^[] + $ 
+this is used to check if there is a interger in the string or not . 
+to check the totoal alpohabets in the strign use - > a-z  in ther string   .
+
+
+
