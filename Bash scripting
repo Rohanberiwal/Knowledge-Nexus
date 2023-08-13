@@ -1,0 +1,95 @@
+Shell scripting commands
+to make a file - > touch nameof thefile . extension  
+bash has the extension of .bash or we can alos use a shell extension that is .sh 
+to print somehting on the bash we use -> echo  "text "
+
+to run a file use - > touch name with extension  > ide name for running  > bash . sh 
+> output of the file  .
+
+the name of the ide name of the .sh is the syntax used . 
+
+to make a file executable we haev to change the mode of the file opening which can either be read , write  read + write  . 
+
+chmod command is use top change the mode of the file > this gives everyone to read and execute the script for example 755 is used to do the same .
+
+to execute the bash file use ./name of the file.sh  
+adding the comment is important and this can beadded using the pound sign  this is used to add the coment in tyhe scripts  .
+
+the coment is also used by the hash sign also so we can use the hash to execute the same ./ 
+comment arer used as the echos 
+for each user we have to define which part of the processor has to use the bash file command and the statement so we have to specify the same  .
+
+/bin/bash are use to find the paths of the file and swee how the excutioj is taking place . 
+
+to specify the envioroment 
+we use  -> /user/bin/env java / javascript etc  .
+
+variable decleration is same as that of other programming language 
+
+
+.bash file 
+
+first namme = blue 
+lastname = cyan 
+echo hi firstname is lastname ; 
+
+execute the file  .
+./~.bash file  
+
+varibale has letter , numbre and underscroes  
+the letter is again a character of 4 bits   .
+they are case sensetive  .
+they are uppcase  , but this is not mandaotry  .
+
+this is $name , $syntax is the synatax used . 
+
+Parameter   >
+$0 > the name of the script , rthe paths is included  .
+$1 > the first parameter  .
+$2  > the second  parameter  
+we cannot passed the dollar sign nine and after that the parameetr gets over . 
+the final paramter is 
+$255 the values is from $0 to $255 .
+ 
+let the name of the file be ->param.sh 
+./param.sh rohan 
+output > hello rohan 
+echo hello $1 
+
+echo $(date)
+echo $(name) both of this takes the paramter 
+
+the value of 0 mean sucess in the bash shell something else display a error . 
+
+if then conditionals - >
+if conditional 
+	then  result 
+fi 
+
+environment variables are defined by the user and they allow the user to set these according to the standard  .
+
+touch var.sh  
+chmod 755 var.sh 
+
+
+example of the enviroment variable is $path . 
+and similary there are several in built functions .
+
+
+some of the environment variables 
+home  -> user home directory  
+path  -> directotoies which are searched for the commands  
+hostname -> hostname of machines 
+shell  -> shell thts is being used 
+user - > user of this session  
+term -> type of command line terminals that is bieng used 
+thereare a lot of enviromental variables than defiend  
+
+functions  -> they lets use do the duplicqting in the code  .
+the way to create a function is the normal way to make a functions . 
+the calling of a function is also very much smam to c , jaav , cpp .
+funtion must be dedfined before the calling .
+
+passing the paramter to a funtion :
+usee a local variable to make or do the function calling . 
+the pasing of the paramter to a function is same as the way it is pasing to a script  .
