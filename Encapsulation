@@ -1,0 +1,28 @@
+Encapsulation 
+Wrapping up the method , data and the implementation of the member inside a class is called encapsulation  .
+It encapsulates the data inside a class so that it is not seen by the other poelpel and the rest of the world  .
+In short making the class private is encapsualtiopn . that lead to the automatic conversion of the data inside to the private  .
+encapsualtion and the abstraction are very different . 
+hiding the unecessay detail and shwoing the useful infro is called as the absraction  .
+
+Abstraction 
+>when a car start we just need to know how to run the car and nothing about the internal mechanism   .
+> hiding the extra information is called the abstraction . 
+> the internal working of the jav function are abstracted from the world hence this is a example of the abstrtraction . 
+> int , strign are called the abstract data types . 
+> the writing of the code of encapsulation makes us use the abstraction . 
+> the hiding of these codes are rpoviding the absrtraction .
+workflow ->
+
+ > abstract data types  > acheives the abstraction  > leads by encapsulation . 
+abstraction is the process of gainingthe infioramtion while encapsulation is the porcess of containing the information . 
+
+using the getter and the setter , asceess control we can hide the stuff. 
+
+Data hiding and ensapsulation 
+data hiding is based on the data security , and the ensqapulation is based on the hiding of the internal; complexity of the system in as say the code . 
+
+private -> data hiding . 
+getter and setter - > ensapulation . 
+method cannot be directly ascessd the method is ascessesd using the getter and the setter only  , this is encapsualtion while makign the whole class private is the data hiding .
+data hiding is acheived via encapsulation . 
