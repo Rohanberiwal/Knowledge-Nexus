@@ -1,4 +1,4 @@
-pipling -> linux  -> Bash 
+piping -> linux  -> Bash 
 pipe in bash is a syntax that is use to run several command at once .
 this can be done by for exmpale say sort-r | head - l the thing in the betwewen is the piping 
 the -r use to rever the sort . 
