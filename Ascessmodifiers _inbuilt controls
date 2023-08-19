@@ -1,0 +1,57 @@
+Ascess control , inbuilt packages and object classes 
+We have to carray out several task for the data manip[ulation 
+to ascess the data  .
+to make the changes in the data ,after the decleration   .
+
+if the method is pruvate then the chnages in the method can be made from the constructor only , by passing the construbotr . 
+if the mehtod has private final keyownd in them then changes cannot be made we either have to use the getter and the setter in the same class to make the chanages . 
+
+The "private " keyword is used for the data hiding , after the class is wrtiien the other classes cannot make the chnages in the pre -defined conditions.
+
+A final data type cannmot be changed using the getter and setter  .
+only the pruivate can be made changes . 
+
+private - > only in the same file 
+public  -> everywheere even open to the world 
+
+deafult modiifer  -> this cannot be used outside the package means the world cannot use it . 
+
+A detailed overview of the modifiers 
+
+
+public - > open to same package , different package , world  , class , subclasses .
+private  -> open to only saem class 
+deafual -> everywherere bu not to the different paxckage . 
+protected - > except the world anyone can use it . 
+
+the subclass can use the things that are associated with the parent class or the class to whcih the subclass is extending it to . 
+
+mutlti - class inheritance is not supporeted in the java .
+if a class is extending two classes then the two de0pended subclass cannot use anything that they have of each other . 
+
+
+Packages ->
+user defined 
+inbuilt packages 
+
+inbuilt packages - 
+>  lang  ->this is a important package that is used to do the additoon , subtraction , dividion and the other mathematical ooerartion . 
+synatx to import  = import java.lang 
+ > io -> frame for the input and the output for the file and other stuff  .
+> util is used for all the utiliy softwartes  . used for data structures .
+
+ > applet  > used for teh java develpoment . 
+awt  > used for the creation of the buttons and etc  .
+
+>net -
+> this is again a development colletyion frameework . 
+
+> eevryclass extends the object class if there is not other inheriance being present .
+this is a example of multiple inheritance and this is done / programmed internally before the use .
+hashcode is not  to print the address of the object where it is being pointed to the memeory  .
+the hashcode is sued to print the random interger values in java just like teh random.randint in the python  .
+the random number is used to print the uniquniess of the object that is being  passd to the hash map . 
+
+// to check if somehting is a instance of a or not then we can use the inbuilt operator called as the "instance of"  and the name of the subclass , this is used to check the name and the instance and return true or return false   .
+this instance ooperator is a boolean function and returen either true or either false .
+To get the data about the class we can use the getClass() to get some inforamtion about the class . after the getclass we have to write aboyt the thing which we want from the class .
