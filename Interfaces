@@ -1,0 +1,203 @@
+Interfaces in java 
+Suppose  for a inheritance we have a class A and class B  . A third class c inherits the attributes of class A and Class B  .Considering this that the function has a function func and if the c calls the function func the the c class will be confused whom to call eithe the a or the b func 
+
+The solution for this is that the parent class gives the user the ioption for the child and the child can fill all the option in the child class .
+The permanent soltuion for this is the method overiding , where the function of the child class are overriden 
+The abstract class are the classes in which during the time of inheritance if the parent class doesd not have a body then the child class  can fill the instance variables accdoring to theier own need and knowldege . 
+The child class attribues can use the overridden method and this can be used by the parenrt class to generate the output . 
+To declare a abstracrt class use  :
+
+Abstract void carrer (String name)  ; // this is also known as the child class responsibliity as the parent class does not have any thing for this . 
+If a class has a abstract method then the class other type has to be declared  . An abstract class is contained only in the abstracrt class . 
+The mehtod and the function shoudl also be abstracrt insde the class .
+The simple overirding moves at the runtime and hence there are error generated onyl at the runtime .
+
+
+example ofthis multi class inheritance 
+import java.util.*;
+class Main 
+{
+    public abstract class Parent
+    {
+        abstract void carrer() ;
+        abstract void patner()  ;
+    }
+    public static abstract class   Daughter extends Parent 
+    {
+        @Override
+        void carrer()
+        {
+            System.out.println("The carrer is doctor  ") ;
+        }
+        @Override
+        void patner()
+        {
+            System.out.println("I  live with my husband  ") ;
+        }
+    }
+    public static abstract class Son extends Parent{
+        @Override
+        void carrer()
+        {
+            System.out.println("The carrer is software enginner ") ;
+        }
+        @Override
+        void patner()
+        {
+            System.out.println("I like to live alone ") ;
+        }
+
+    }
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in) ;
+        Son s = new Son() ;
+        s.carrer()  ;
+        s.patner() ;
+        Daughter d = new Daughter() ;
+        d.carrer() ;
+        d.patner() ;
+
+    }
+}
+
+The object of the abstract class cannot be created 
+We can make a special constuctor of the abstracrt class the java allows us to do this . This in the child can be ascessesd using the super keyword just like a parent child in the case of uinhertitance .
+Object creation is a problem in the abstrtact class odf the java 
+
+Creation of abstracrt constructors  :
+
+
+Now this works 
+import java.util.*;
+class Main 
+{
+    public static abstract class Parent
+    {
+        abstract void carrer() ;
+        abstract void patner()  ;
+    }
+    public static class   Daughter extends Parent 
+    {
+        String name ;
+        @Override
+       public void carrer()
+        {
+            System.out.println("The carrer is doctor  ") ;
+        }
+        @Override
+       public  void patner()
+        {
+            System.out.println("I  live with my husband  ") ;
+        }
+    }
+    public static  class Son extends Parent{
+        String name  ;
+        @Override
+      public   void carrer()
+        {
+            System.out.println("The carrer is software enginner ") ;
+        }
+        @Override
+      public   void patner()
+        {
+            System.out.println("I like to live alone ") ;
+        }
+
+    }
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in) ;
+        Son son = new Son() ;
+        son.carrer()  ;
+        son.patner() ;
+       
+    }
+}
+
+Wee can create static method of the asbract classes . 
+By deafault the other method wil also be abstrct . 
+A final sbatrct class is not allowed since the final kleyowd does not allowe the inhertiacne to be done . 
+final variables has to be initilised 
+
+interfaces  -> these are the set of abstract functions therer is no body of the functions 
+this also has object independt stuff like the static method and static keyword 
+variables are static and final; by default in the keywrod 
+the vairables in the interface are static and final .
+the interfqace cannot priovide a implememtation for the absrtract class .
+However the abstract class can priovide a implementation for the iinterface . 
+
+the java interface are used by the implments keyword 
+the point for the final and static keyword is important .
+interfaces are used to create the custom classes  
+
+// example for the interface 
+
+import java.util.*;
+class Main 
+{
+    public static  class Car implements Brake , Engine
+    {
+        @Override
+       public  void acclerate() 
+        {
+            System.out.print("The car is getting acclerated ") ;
+        }
+        @Override
+      public void speedmeter() 
+        {
+            System.out.print("The car is at a high speed  ") ;
+        }
+        @Override
+     public  void speedup() 
+        {
+            System.out.print("the care is increasign the speed ") ;
+        }
+        @Override
+     public  void powerup() 
+        {
+            System.out.print("The car's horsepower is increasing ") ;
+        }
+        @Override
+       public  void slowdown() 
+        {
+            System.out.print("The speed is decreasing") ;
+        }
+        
+    }
+    public interface Brake
+    {
+        void acclerate() ;
+        void speedmeter() ;
+    }
+    public interface Engine
+    {
+        void speedup() ;
+        void slowdown() ;
+        void powerup() ;
+    }
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        Car car = new Car() ;
+        car.slowdown();
+        car.speedmeter();
+        car.acclerate() ;
+
+    }
+}
+Syntax - > which version to ascess   == whato ascess  
+
+exteding the interface  : 
+the annotation is a interface in the internal sidee 
+if there is a method that is static then there cannot be inheritance means there is no metho overiridjng possible .
+to do the inhertiance there must be method override and that is the runtime polymorphism so that is also not possible . 
+
+the static interface method must alswasy have a body . 
+if in the classes if the parent class has the method that is protected , then the child must have the propeties as either protected or they must either be better  than this m3ean the public method . 
+
+Introdfuction to nested interface  :
+the example of this is if one of the class say a has a interface named x
+then to make the extending interface for the inheritanceof this we have b then the syntax for this si b :
+synatx  -> public b extends a.x // then the basic code 
+
