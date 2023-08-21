@@ -1,0 +1,31 @@
+Advanced bash scritping 
+Sourcing is a common way to import variable assignment or functions 
+The source script is execturted within the calling of shell's processes 
+Working with the alias 
+the alias command is ls -l filename
+alias to copy is cp ;
+rn = move 
+mroe   = more 
+ls - l |mroe 
+
+list alias is used to see the possible alias in the bash
+therer are pre - defined alais in this 
+to see if a commnad has alia then we can use the alias ls command 
+to make unalias we can use the unalias ls command 
+
+These command depeend on the different type of bashb  :
+echo command is to print somehtinf on the command line 
+-n  : dont print a traling newline 
+-e  : enable backslasah escaped character like \n 
+-E : disable the backslash escaped character in case hey were enabled by default .
+ls * print the content of the directory 
+echo * show th file name and directory name 
+export is used to maek the copy or declare anathor variable .
+$a is used to print the value of a variable .
+
+Arthematic is faster for the variablers defiend to be integer .
+let allow the use of arthematic operartions . \
+
+the declare command 
+declare -l uppercase values in teh variable are converted to lowercase . 
+declare -u lowercase values in the variables are converted to uppawercase 
