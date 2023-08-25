@@ -1,0 +1,26 @@
+Topic included  :
+Task managemant 
+inter- task syncronisation , memory aloocation and the tiem , interrupts 
+Advanced Coding in the unix like operating system 
+
+OPERATING System  :
+every iot device has a os . 
+os allows to do more comoplex comuputations 
+to run  a program wihtout a os we have to use the concept of a super loop techinque .
+one file with the testing one that is running fir the infinte time and the other that is checking the error in the file . using the file that is running . 
+
+In between the interupts helps in the taking of the component tasking , input taking  .
+the problem with the super loop is that the things get out of control very easiy also therre has to be the interupts and the task scehduling that  again and again for the exectuion of the program 
+
+for the iot devices  :
+resource management 
+protability 
+modularity 
+power efficient 
+extensibility 
+modularity and supprot , liscensing 
+these are the major requirements 
+
+os for resouce contrained devices 
+the resouce contained devices is a embedded deveice and is very different from the other devics
+they have a limited storage units  .
