@@ -1,0 +1,15 @@
+Machine learning 
+>Ability of the computer to learn themselves wihtout being explicitly programmed .
+Machines learn themselves in machine learning .
+****
+deep learning is a sub branch of machine learning and machine learning is a sub unit of artifiicial intelligence .
+****
+
+Learning is done on the basis of the previous input of data .
+
+In ML:
+data(input) -> machine -> program on its own 
+data needs to be high precesion and accruate .
+
+Error margin  : Difference between the machine generated output and the actual data . 
+Error margin has to be reduced to get the ideal output .
