@@ -1,0 +1,52 @@
+Abstract Syntax Tree :
+Use for refactoring application and the codebases . 
+Used in the webpack  , wabble and prettier , software tools  
+
+
+What is  AST ?
+A tree starts with the root node and has nodes  . 
+AST has child , parent , root node similar to a bianry seach treee or a simple binary tree . 
+Ast has common application in the complier  :
+
+Input (High level) -> compiler -> output(Low level like the assembly) 
+The webpacker or the parcel are the tools that are use complier many modules into a bundle and perform other optimisation like tranpiling the javascriprt from a modren version to a older version or by renaming the variables name to the shoerter names  . 
+
+Complier -> fornt end and the backend  :
+front end -< this is used for the braking and the paresing the source code ,  while the backned gives the output . 
+
+
+There is a cross compliation that is needed, fronm the  inputb -> abstract syntax tree -> output .
+This is the major applicqation in  the cross compliation  . 
+The protocal for the input to the output soruce code generation in the refarctoring of the codebase or in the cross compliation , the ast used to work as a intermediate . 
+
+The output for a front end complier -> is the ast  . 
+
+Uses of ast  :
+How many times a variable is used int eh source code  .
+How to do the cross compliation of one lannguge to the other one . 
+
+
+Exmple : 2 + (4*10)
+->2 on the left of the root node , + is the ropot node
+-> 4 is on teh left , 10 on the right , * is the child of the root node .
+ 
+
+Json files are also used to show the ast , using the approprairte coding in the ast .
+AST explorers are the most best way to provide a top overview and find the posisble and new asts in the files  .
+
+JavaScript is the langauge that is used for the ast explorining .
+
+Java script AST ecosystem is used for the ast finding ,  sonme of them are ESLint , BABEL  . Terser  etc .
+Babel is a java script compliler . 
+Terser is  a praser in the java script . 
+
+Tokenizer | Parser 
+The code is parsed and a abstract 
+The root for the ast after the tockenizing is the operations .  
+The tokenizer is  the lexical anylisis .
+The parser is the syntatic anaylisis . 
+
+Backus Naur form : a form to describe the synatx  or the grammer of the langauges . 
+There are  two type of the paraser  :
+1>Hand written paraser and  the automatically generated paraser .  
+There are different algorhtn for this For example LL , LL1 , LR and GLR AND PEG for the parasering a algorithm,  . 
