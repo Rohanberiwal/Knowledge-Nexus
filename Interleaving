@@ -1,0 +1,18 @@
+Inter-Segment and Intra-Segment in Memory Management:
+
+Inter-Segment:
+In the context of memory segmentation, "inter-segment" typically refers to operations or
+relationships between different segments of memory. A segment is a logical division of a 
+program or process's address space. Inter-segment operations involve interactions between different segments.
+Intra-Segment:
+Conversely, "intra-segment" refers to operations or relationships within a single segment.
+Intra-segment operations involve accessing or manipulating data within the boundaries of a specific segment.
+Interleaving in Memory Access:
+
+Interleaved Memory:
+Another interpretation could be related to memory interleaving. 
+Interleaving is a technique used in memory systems where consecutive blocks of memory are distributed across multiple memory modules or banks.
+This is done to improve memory access bandwidth.
+Intra-Segment and Inter-Segment in Interleaving:
+In this context, "intra-segment" might refer to operations within a single memory module or bank, and 
+"inter-segment" could refer to operations that involve accessing different memory modules or banks.
