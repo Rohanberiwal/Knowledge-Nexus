@@ -1,0 +1,31 @@
+A tarball is a compressed archive file format commonly used in Unix-like operating systems.
+It is created using the tar command, which stands for "tape archive." 
+The tar command combines multiple files and directories into a single archive file, preserving their directory structure and file permissions.
+The term "tarball" typically refers to a tar archive file that has been compressed using a compression algorithm such as gzip (tar.gz) or 
+bzip2 (tar.bz2). This compression reduces the file size of the archive, making it more efficient to store and transfer over networks.
+Tarballs are often used for distributing software packages, as they allow developers to bundle multiple files and 
+directories into a single compressed file. Users can then extract the contents of the tarball on their system using the tar command,
+restoring the original files and directory structure.
+
+
+How to create a own tarball ?
+Command ->
+  tar -czf example.tar.gz .
+How to extract the tarball as a zip file ?
+Command ->
+  tar -xzf example.tar.gz
+
+
+Structure: A tarball is essentially an archive file that combines multiple files and directories into a single file.
+It preserves the directory structure and file permissions of the original files and directories.
+
+Compression: Tarballs are often compressed using compression algorithms like gzip (tar.gz) or bzip2 (tar.bz2). 
+This compression reduces the overall size of the archive, making it more efficient to store and transfer over networks.
+
+Creation: Tarballs are created using the tar command in Unix-like operating systems. For example, to create a tarball named
+archive.tar.gz containing the contents of a directory named my_directory, you would use the following command:
+Copy code
+tar -czf archive.tar.gz my_directory
+Extraction: To extract the contents of a tarball, you can use the tar command with the appropriate options. 
+For example, to extract the contents of archive.tar.gz, you would use the following command:
+tar -xzf archive.tar.gz
