@@ -1,0 +1,33 @@
+HyperVisor 
+
+A hypervisor, also known as a virtual machine monitor (VMM), is a software layer that enables multiple virtual machines (VMs)
+to run on a single physical machine. The hypervisor abstracts the physical hardware resources of the host machine and allocates them
+to the virtual machines, allowing each VM to operate independently as if it were running on its own dedicated hardware.
+
+There are two primary types of hypervisors:
+
+Type 1 Hypervisor (Bare Metal): A Type 1 hypervisor runs directly on the physical hardware of the host machine, without the
+need for an underlying operating system. It has direct access to the hardware resources and manages them to create and control the VMs.
+Examples of Type 1 hypervisors include VMware vSphere/ESXi, Microsoft Hyper-V, and Xen.
+
+Type 2 Hypervisor (Hosted): A Type 2 hypervisor runs on top of an existing operating system, known as the host operating system. 
+It relies on the host OS to manage hardware resources and provides virtualization capabilities through software emulation.
+Type 2 hypervisors are typically used for desktop virtualization or development/testing environments. Examples include VMware Workstation, 
+Oracle VirtualBox, and Parallels Desktop.
+
+Key functions of a hypervisor include:
+
+Resource Management: The hypervisor manages the allocation of physical hardware resources, such as CPU, memory, storage, and network interfaces,
+among the virtual machines running on the host machine.
+
+Isolation: The hypervisor ensures that each virtual machine operates in isolation from other VMs, preventing one VM from interfering with
+the operation of others. Isolation improves security and stability in multi-tenant environments.
+
+Virtual Machine Lifecycle Management: The hypervisor controls the creation, start-up, shutdown, and deletion of virtual machines, 
+as well as the migration of VMs between physical hosts.
+
+Performance Optimization: The hypervisor optimizes resource utilization and performance by dynamically adjusting resource allocation 
+based on workload demands and priorities.
+
+Hypervisors play a crucial role in server virtualization, cloud computing, and desktop virtualization environments,
+enabling organizations to consolidate hardware resources, improve flexibility and scalability, and reduce costs.
