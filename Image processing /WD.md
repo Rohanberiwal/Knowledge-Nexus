@@ -3,7 +3,6 @@
 Wiener deconvolution is a widely used algorithm in image processing for restoring images that have been degraded by a linear process, such as blurring or convolution with a known or unknown kernel, and possibly contaminated by noise. The algorithm is based on the assumption that the degradation process can be modeled as linear convolution with some unknown kernel, along with additive noise.
 
 The basic idea behind Wiener deconvolution is to estimate the original, undegraded image by applying a deconvolution filter to the degraded image. This filter is designed to minimize the mean square error between the estimated image and the original image, taking into account both the degradation process and the noise.
-
 The Wiener deconvolution filter is defined in the frequency domain as follows:
 
 \[ H(u, v) = \frac{{G(u, v) \cdot H^*(u, v)}}{{|H(u, v)|^2 + \frac{{S_n(u, v)}}{{S_f(u, v)}}}} \]
