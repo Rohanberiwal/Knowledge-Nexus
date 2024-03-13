@@ -1,0 +1,26 @@
+from sympy.abc import x, y
+from sympy import nsolve, Eq
+equations = [Eq((x - 6)*(y - 5), 0), Eq((y - 2)/(x + y - 8), 3)]
+vars = [y, x]
+for x_val in range(-10, 3):
+    for y_val in range(-10, 3):
+        start_points = (y_val, x_val)  
+        try:
+            solution = nsolve(equations, vars, start_points)
+            print(f"Solution for (x, y) = ({x_val}, {y_val}):", solution)
+        except Exception as e:
+            print(f"No solution for (x, y) = ({x_val}, {y_val}):", e)
+
+"""
+from sympy.abc import x, y
+from sympy import nsolve, Eq
+equations = [Eq((x - 6)*(y - 5), 0), Eq((y - 2)/(x + y - 8), 3)]
+vars = [y, x]
+start_points = (6.1, 5.1)
+try:
+    solution = nsolve(equations, vars, start_points)
+    print("Solution:", solution)
+except Exception as e:
+    print("Error:", e)
+"""
+
