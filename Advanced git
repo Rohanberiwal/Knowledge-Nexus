@@ -1,5 +1,4 @@
 Git notes -2  // advanced git 
-
 to the total number of branches in the files-> git branch -a 
 to make a new branch we can do it using-> git branch name.branch/file.name  ;
 there is a local copy and there is a permanent copy 
