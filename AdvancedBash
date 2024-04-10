@@ -7,7 +7,6 @@ alias to copy is cp ;
 rn = move 
 mroe   = more 
 ls - l |mroe 
-
 list alias is used to see the possible alias in the bash
 therer are pre - defined alais in this 
 to see if a commnad has alia then we can use the alias ls command 
