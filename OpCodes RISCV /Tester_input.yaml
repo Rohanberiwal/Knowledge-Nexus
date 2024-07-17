@@ -1,0 +1,28 @@
+opcodes:
+  opcode1:
+    bit_start: 0
+    bit_end: 7
+    value: 255
+    arguments:
+      - arg1
+      - arg2
+  opcode2:
+    bit_start: 8
+    bit_end: 15
+    value: 512
+    arguments:
+      - arg3
+      - arg4
+  opcode3:
+    bit_start: 16
+    bit_end: 23
+    value: 200
+    arguments:
+      - arg1
+      - arg5
+argument_lookup:
+  arg1: description1
+  arg2: description2
+  arg3: description3
+  arg4: description4
+  arg5: description5
